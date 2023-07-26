@@ -34,7 +34,7 @@ if [[ $MESSAGE -gt 0 ]]; then
   exit 0
 fi
 
-PR_TITLE=$(git log -1 --format="%s")
+PR_TITLE=$(git log -1 --format="%s" ${$GITHUB_SHA})
 
 git_cmd git remote update
 git_cmd git fetch --all
