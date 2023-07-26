@@ -29,19 +29,12 @@ git_setup
 PR_BRANCH="auto-$INPUT_PR_BRANCH-$GITHUB_SHA"
 MESSAGE=$(git log -1 $GITHUB_SHA | grep "AUTO" | wc -l)
 
-echo MESSAGE
-echo $MESSAGE
-
 if [[ $MESSAGE -gt 0 ]]; then
   echo "Autocommit, NO ACTION"
   exit 0
 fi
 
 PR_TITLE=$(git log -1 --format="%s")
-git log -1 --format="%s"
-echo PR_TITLE
-echo ${PR_TITLE}
-PR_TITLE=dummy_title
 
 git_cmd git remote update
 git_cmd git fetch --all
