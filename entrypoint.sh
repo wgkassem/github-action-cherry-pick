@@ -33,6 +33,7 @@ if [[ $MESSAGE -gt 0 ]]; then
 fi
 
 PR_TITLE=$(git log -1 --format="%s" $GITHUB_SHA)
+echo ${PR_TITLE}
 
 git_setup
 git_cmd git remote update
