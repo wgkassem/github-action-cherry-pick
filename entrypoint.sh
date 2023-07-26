@@ -32,7 +32,7 @@ if [[ $MESSAGE -gt 0 ]]; then
   exit 0
 fi
 
-PR_TITLE=$(git log -1 --format="%s" $GITHUB_SHA)
+PR_TITLE=$(git log -1 --format="%s")
 echo ${PR_TITLE}
 
 git_setup
