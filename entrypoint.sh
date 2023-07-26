@@ -32,7 +32,8 @@ if [[ $MESSAGE -gt 0 ]]; then
   exit 0
 fi
 
-PR_TITLE=$(git_cmd git log -1 --format="%s")
+PR_TITLE=$(git log -1 --format="%s")
+git log -1 --format="%s"
 echo PR_TITLE
 echo ${PR_TITLE}
 
