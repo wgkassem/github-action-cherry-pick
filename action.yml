@@ -9,7 +9,7 @@ inputs:
     description: 'Labels for the new PR'
     required: false
     default: 'autocreated'
-  strategy:
+  strategy_option:
     description: 'Merge strategy for cherry-pick'
     required: false
     default: 'ours'
