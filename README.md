@@ -32,7 +32,7 @@ CSV Labels to apply on the PR created. Default: `autocreated`
 
 #### `strategy_option`
 
-Strategy option for default [ort](https://git-scm.com/docs/merge-strategies#Documentation/merge-strategies.txt-ort) strategy. Default `theirs`
+Strategy option(s) for default [ort](https://git-scm.com/docs/merge-strategies#Documentation/merge-strategies.txt-ort) strategy. Default `theirs`.
 
 ## Example usage
 
