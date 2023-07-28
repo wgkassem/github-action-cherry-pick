@@ -16,6 +16,8 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.strategy_option }}
 branding:
   icon: git-merge
   color: yellow
