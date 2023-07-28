@@ -35,6 +35,7 @@ if [[ $MESSAGE -gt 0 ]]; then
 fi
 
 PR_TITLE=$(git log -1 --format="%s" ${GITHUB_SHA})
+INPUT_STRATEGY_OPTION=$1
 echo merge-strategy
 echo ${INPUT_MERGE_STRATEGY}
 git_cmd git remote update
