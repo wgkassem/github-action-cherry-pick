@@ -12,7 +12,7 @@ inputs:
   strategy_option:
     description: 'Merge strategy for cherry-pick'
     required: false
-    default: 'ours'
+    default: 'theirs'
 runs:
   using: 'docker'
   image: 'Dockerfile'
