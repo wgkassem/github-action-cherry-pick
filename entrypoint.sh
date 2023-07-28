@@ -35,10 +35,7 @@ if [[ $MESSAGE -gt 0 ]]; then
 fi
 
 PR_TITLE=$(git log -1 --format="%s" ${GITHUB_SHA})
-INPUT_STOPT=$1
-echo merge-strategy
-echo ${INPUT_STRATEGY_OPTION}
-echo ${INPUT_STOPT}
+
 git_cmd git remote update
 git_cmd git fetch --all
 git_cmd git checkout -b "${PR_BRANCH}" origin/"${INPUT_PR_BRANCH}"
