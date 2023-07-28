@@ -13,7 +13,7 @@ developers works on but we want to push the changes to the Release branches too.
 * Get the last commit SHA
 * Checkout the other branch, Y
 * Create a new pr branch Z on the branch Y
-* Cherry Pick the commits from X into Z
+* Cherry Pick the commits from X into Z with strategy options
 * Push the branch and create the PR on base Y 
 * PR title will be prefixed with `AUTO`
 
@@ -29,6 +29,10 @@ developers works on but we want to push the changes to the Release branches too.
 #### `pr_labels`
 
 CSV Labels to apply on the PR created. Default: `autocreated` 
+
+#### `strategy_option`
+
+Strategy option(s) for default [ort](https://git-scm.com/docs/merge-strategies#Documentation/merge-strategies.txt-ort) strategy. Default `theirs`.
 
 ## Example usage
 
